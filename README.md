@@ -2,8 +2,9 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-infinite-scroll-vj)
 
+Infinite Sroll Input Data
 
-Sample Infinit Sroll Input Data
+SAMPLE:
 
 let configJSON = {
    cellClick:(item)=>{console.log('Clicked',item)},   // callback Handler for Cell
