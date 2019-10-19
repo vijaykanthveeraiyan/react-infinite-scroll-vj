@@ -4,6 +4,13 @@
 
 Infinite Sroll Input Data
 
+It is a HTML table which will display rows and columns based on the data given.
+Index of the row is auto populated.
+The first row and table header are sticky.
+It can load n number of rows without any performance lag.
+When the table reaches the scroll threshold,it will append the new data set if available with loading symbol till it renders the DOM.
+
+Below is the sample mandatory input format infinite scroll
 SAMPLE:
 
 let configJSON = {
