@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import ListItem from './ListItem';
 import Header from './Header';
 import Loader from './Loader';
+import ListItemContainer from './ListItemContainer';
 class List extends React.Component {
   constructor(props) {
     super(props);
@@ -60,9 +61,6 @@ class List extends React.Component {
   }
   
   render() {
-   let listItemArr = this.state.listData.map((listItem, idx) => (
-     (<ListItem data={listItem} idx={idx} itemClick={this.itemClick} titleArr={this.state.titleArr}/>)
-    ));
     return (
       <div>
         <h1>{this.props.title}</h1>
@@ -77,7 +75,7 @@ class List extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {listItemArr}
+              <ListItemContainer listData={this.state.listData}itemClick={this.itemClick}></ListItemContainer>
             </tbody>
           </table>
         </div>
